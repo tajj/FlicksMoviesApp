@@ -65,9 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     for(int i = 0; i < results.length(); i++){
                         Movie movie = new Movie(results.getJSONObject(i));
                         movies.add(movie);
-adapter.notifyItemInserted(movies.size()-1);
+                        adapter.notifyItemInserted(movies.size()-1);
 
                     }
+
                     Log.i(TAG, String.format("Loaded %s movies", results.length()));
                 } catch (JSONException e) {
                     logError("Failed to parse now playing movies", e, true);
@@ -91,7 +92,7 @@ adapter.notifyItemInserted(movies.size()-1);
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {
-config = new Config(response);
+                    config = new Config(response);
                     Log.i(TAG,
                             String.format("Loaded configurtion with imageBseUrl %s and posterSize %s",
                                     config.getImageBaseUrl(),
