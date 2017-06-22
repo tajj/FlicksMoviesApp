@@ -8,8 +8,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvMovies"
-        android:layout_width="294dp"
-        android:layout_height="402dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+        android:layout_width="431dp"
+        android:layout_height="637dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 </android.support.constraint.ConstraintLayout>
